@@ -1,4 +1,9 @@
+# Bring in needed packaged
 import csv
+
+# Create a CSV
+# input: file name, does not include .csv in it
+# output: a csv file
 
 def createNewCSV(csvname):
     filename = csvname + ".csv"
@@ -6,8 +11,7 @@ def createNewCSV(csvname):
     with open(filename, 'wb') as csvfile:
         filewriter = csv.writer(csvfile, delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
-createNewCSV('test1')
-createNewCSV('test2')
-createNewCSV('test3')
-createNewCSV('test4')
-createNewCSV('test5')
+#def pullData(): 
+#def cleanData():
+
+createNewCSV('dataset')
